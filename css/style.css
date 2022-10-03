@@ -1,0 +1,507 @@
+body{
+    padding: 0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+}
+/* header section */
+ header{
+    color: #FFFFFF;
+    padding: 1% 7% 0% 7%;
+    display: flex;
+    flex-direction: column;
+    background: #1AC073;
+   
+}
+#nav{ 
+    display: grid;
+    grid-template-columns:20% 60% 20%;
+    margin-bottom: 3vw;
+}
+/* logo of website */
+#icon{
+    width: 40%;
+}
+#subheader{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+/* home,about,menu,blog section */
+a{ 
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size:1.3vw;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+    margin-right: 7%;
+} 
+#left-head{
+    margin-top: 10vw;
+}
+/* search bar design */
+.search {
+    margin: 5% 0%;
+    width: 72%;
+    display: flex;
+  }
+  
+  .searchTerm { 
+    width: 50%;
+    border: none;
+    padding: 0.5vw 3vw;
+    height: 2vw;
+    border-radius: 1vw 0 0 1vw;
+    outline: none;
+    color: #9DBFAF;
+    font-size:1.3vw;
+  }
+  
+  .searchButton {
+    width: 27%;
+    height: 3vw;
+    border: none;
+    background: #F3BA00;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 1vw 1vw 0;
+    cursor: pointer;
+    font-size:1.1vw;
+  }
+  /* image of cooks */
+#cook{
+    width:40vw;
+}
+
+/* header pop up section */
+.popup{
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    display:none;
+    text-align:center;
+    z-index: 7;
+    background: rgba(0, 0, 0, 0.35);
+}
+.popup-content{
+        border-radius: 10px;
+        margin: 5% 4% 0% 3.5%;
+        height:50%;
+        width:90%;
+        background:#ffffff;
+}
+#shoping-bag{
+    position: relative;
+    top:20%;
+    height: 20%;
+    width: 15%;
+ }
+ /* back to menu */
+#close{
+       background-color: #1AC073;
+       width: 12%;
+       height: auto;
+       color: white;
+       border-color: #1AC073;
+       position: relative;
+       top:25%;
+       border-width: 0px;
+       border-radius: 4px;
+       font-size:1vw;
+       padding: 1%;
+       align-items: center;
+       cursor: pointer;
+}
+
+
+
+
+/* Kitchen section */
+#kitchen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#item{
+    width: 277PX;
+    margin:2% 2%;
+    box-shadow: 1px 1px 0px rgba(78, 77, 77, 0.25);
+    border-radius: 10px;
+}
+/* image of items */
+#image{
+    width: 100%;
+    height: 250px;
+}
+/* details of image */
+#details {
+   position:relative;
+   display: flex;
+   flex-direction: wrap;
+   height: 62px;
+   padding: 6% 6%;
+   background: #FFFFFF;
+}
+/* left part of details of image */
+#left{
+    width: 70%;
+}
+/* right part of details of image */
+#right{
+    padding-left: 10%;
+    width:18%;
+}
+#rate-time{
+    display: flex;
+    margin-top: 10.5%;
+    font-size: 75%;
+}
+/* design star icon */
+#star{
+    padding: 3% 0% 0% 0%;
+    display: flex;
+    
+    border-radius: 20%;
+    background-color: #F7F8FA;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+}
+#star-img{
+   height: 70%;
+}
+
+#time{
+    margin-left: 5%;
+    padding: 2.5%;
+    border-radius: 18%;
+    border-style: none outset none inset;
+    
+}
+/* plus icon */
+#plus-img{
+    padding-top: 40%;
+    height:33%;
+}
+
+
+
+/* Popular items section */
+
+#fav{
+    /* width:80vw; */
+    margin: 0 10vw;
+    display: grid;
+    grid-template-columns:10% 80% 10%;
+    justify-content: center;
+    padding: 0%;
+}
+#popular-item{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: -0.012em;
+    color: #000000;
+    margin-top: 5%;
+
+}
+
+/* couresel */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.wrapper{
+  width: 80%;
+}
+.carousel{
+  /* max-width: 60vw; */
+  margin: 5vw;
+}
+.carousel .card{
+  color: #fff;
+  text-align: center;
+  /* margin: 5vw 0; */
+  line-height: 250px;
+  font-size: 90px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+.owl-stage{
+width:80vw;
+}
+
+.play{
+    width: 7vw;
+    text-align: center;
+    padding-top: 110px;
+}
+
+/* requested dish button */
+#request-dish{
+    background-color: #1AC073;
+    width: 12%;
+    height: 4%;
+    color: white;
+    border:none;
+    position: relative;
+    left:44%;
+    border-radius: 4px;
+    font-size:1vw;
+    padding: 1%;
+    align-items: center;
+    margin:1% 0% 5%;
+    cursor: pointer;
+}
+   /* requested-dish-pop section */
+.requested-dish-pop{
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    display:none;
+    text-align:center;
+    z-index: 7;
+    background: rgba(0, 0, 0, 0.35);
+}
+/* design of that section when clic on requested dish button */
+#requested-dish-pop-contents{
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 30% 40% 30%;
+    margin: 5% 4% 0% 3.5%;
+    height:50%;
+    width:90%;
+    background:#ffffff;
+
+}
+/* requested of pop up */
+#requested-dish-pop-contents-header{
+    font-family: 'Roboto';
+    margin-top: 5%;
+    font-size: 3vw;
+}
+#requested-dish-pop-contents > .requested-dish-pop-contents-input{
+    display: grid;
+    grid-template-rows: 4;
+}
+.requested-dish-pop-contents-input > p{
+    text-align: left;
+    margin-left: 5%;
+}
+.requested-dish-pop-contents-input > input{
+    margin: 0px 5%  0% 5%;
+    border-radius:4px ;
+    border-width: 0px;
+    background: #F2F2F2;
+    padding-left: 1%;
+}
+/* pop up button cancle and submit */
+.popup-button{
+    margin:4%;
+    border-color: #1AC073;
+    width: 20%;
+    border-radius:10px;
+    height: 25%;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+
+
+/* Service section */
+/* custom video play button */
+ #service{
+    /* display: flex;
+    flex-direction: column;  */
+    height: 50vh;
+    display: grid;
+    grid-template-rows: 10% 45% 45%;
+}
+#service div p{
+    font-size: 1vw;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+/* video of service section */
+#service div video{
+    position: relative;
+    top:60%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: 4;
+}
+#service-bottom-part{
+    background-color: #C7EACC;;
+    z-index: 2;
+} 
+
+
+
+/* contact us section */
+#contact-section{
+    background-color: #F7F8FA;
+    padding: 7% 10%;
+}
+#contactus{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    
+}
+/* there are two columns of input and rider section */
+#input-columns{
+    display: flex;
+    flex-direction: column;
+}
+/* input of name and email */
+.input{
+    height: 4vw;
+    max-height: 50px;
+    width: 30%;
+    min-width: 120px;
+    border-width: 0px;
+    border-radius: 5px;
+    margin-left: 1%;
+    border-color: #ffffff;
+    margin-top: 5%;
+    font-size: 1.3vw;
+}
+/* take message */
+#text_area{
+    height: 6vw;
+    max-height: 200px;
+    width: 61%;
+    min-width: 120px;
+    margin-top: 5%;
+    border-color: #ffffff;
+    border-radius: 5px;
+    margin-left: 1%;
+    font-size: 1.4vw;
+}
+
+#inputs{
+    width:60vw;
+    margin-left: -1%;
+}
+
+#input-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* image of rider in contact us section */
+#rider{
+    width:27vw;
+}
+/* submit button */
+#submit{
+    border-color: #ffffff;
+    border-width: 0px;
+    text-align: center;
+    margin-top: 5%;
+    padding: 1%;
+    background: #1AC073;
+    border-radius: 10px;
+    width: 15%;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.3vw;
+    margin-left: 20px;
+}
+
+
+
+/* footer section */
+
+footer{
+    padding: 2% 7% 0% 7%;
+    display: grid;
+    grid-template-rows:10% 85%;
+    gap:5%;
+    height: 10vh;
+    background: #1AC073;
+}
+hr{
+    margin-top:3% ;
+    background-color: #FFFFFF;
+    height: 2%;
+    border-color: #FFFFFF;
+    border-style: none;
+    /* border-width: 2%; */
+}
+#subfooter{
+    display: grid;
+    grid-template-columns:20% 60% 20%;
+    
+}
+
+
+.owl_wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90vw;
+  min-width: 260px;
+}
+.owl_content{
+    position: relative;
+    width: 90vw;
+    min-width: 260px;
+    /* margin-left: 5vw; */
+    overflow: hidden;
+}
+.owl_wrapper .owl-item{
+  opacity: 0;
+  transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  transition: all .2s;
+  -webkit-transform: all .2s;
+  z-index: 1;
+}
+
+.owl_wrapper .active{opacity: 0.5;}
+.owl_wrapper .active.middle_beside{
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  opacity: 0.8;
+  margin: 0 -1%;
+  z-index: 2;
+}
+.owl_wrapper .active.middle{
+  transform: scale(1);
+  -ms-transform: scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+
+
+/*===== Navigation =====*/
+.owl_wrapper .prev, .owl_wrapper .next{
+   text-align: center;
+  cursor: pointer;
+}
+.owl_wrapper .next{
+    position: absolute;
+    z-index: 5;
+    /* margin-left: 75vw; */
+    
+}
+.owl_wrapper .prev{
+    position: absolute;
+    z-index: 5;
+    margin-left: 62vw;
+}
+.no_select{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+
+
+ 

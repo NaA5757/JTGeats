@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Authentic Home Food in India</title>
+      <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+
+      <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  
+      <div id="header-section"></div>
+
+
+      <div class="popup">
+        <div class="popup-content">
+          <img id="shoping-bag" src="Assets\icons\Cart2.svg"/>
+          <div style="position: relative; top:20%;">
+            <h1>Cart is Empty</h1>
+            <p>Add some items to the cart to checkout</p>
+          </div>
+          <input type="button" id="close" value="Back to menu"/>
+        </div>
+    </div>
+
+
+
+        <div class="requested-dish-pop">
+            <div id="requested-dish-pop-contents">
+                    <div id="requested-dish-pop-contents-header">
+                        Request a Dish
+                    </div>
+                    <div class="requested-dish-pop-contents-input">
+                            <p >Name*</p>
+                            <input type="text" placeholder="Enter the name of the dish" required=true/>
+                            <p >Upload an image</p>
+                            <input type="url" placeholder="Paste a URL"/>
+                    </div>
+                    <div >
+                        <input type="button" value="Cancle" id="cancle" class="popup-button" style="color:#1AC073"/>
+                        <input type="submit" value="Submit Request" class="popup-button" style="background-color: #1AC073 ; border: none; color:#ffffff"/>
+                    </div>
+            </div>
+        </div>
+        <div id ="non-header"></div>
+        <script src="script/main.js" type="module">
+        </script>
+        <script>
+        </script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+      <script>
+      $(document).ready(function(){
+              $(".owl_content").owlCarousel({
+                rewindNav: false,
+                addClassActive: true, //important
+                mouseDrag: false,
+                afterAction: function add_mid_class(el){
+                  $('.owl-item')                     
+                    .removeClass('middle')
+                    .removeClass('middle_beside')
+                    .removeClass('next_to_mid')
+                    .removeClass('prev_to_mid');
+                  var middle_item = Math.floor($('.active').length / 2);
+                  middle_item --;
+                  $('.active').eq(middle_item - 1).addClass('middle_beside');
+                  $('.active').eq(middle_item).addClass('middle');
+                  $('.active').eq(middle_item + 1).addClass('middle_beside');
+                  $('.active').eq(middle_item + 1).nextAll().addClass('next_to_mid');
+                  $('.active').eq(middle_item - 1).prevAll().addClass('prev_to_mid');
+                }
+              });
+
+              var owl = $(".owl_content").data('owlCarousel');
+              $('.owl_wrapper .next').click(function(){owl.next();});
+              $('.owl_wrapper .prev').click(function(){owl.prev();});
+              });
+
+      </script>
+  </body>
+</html>

@@ -17,11 +17,11 @@ document.getElementById("non-header").innerHTML = `
                <div id="fav" >
                <div id="scroll">
                <div class="owl_wrapper">
-               <div class="prev no_select"><img src="Assets\\icons\\play2.svg" class="play" style="width:3vw;min-width:50px;position:absolute;z-index:8;"/></div>
+               <div class="prev no_select"><img src="Assets\\icons\\play.svg" class="play" style="width:3vw;min-width:50px;position:absolute;z-index:8;"/></div>
                <div class="owl_content">
                ${popularItem}
                </div>
-              <div class="next no_select"><img src="Assets\\icons\\play.svg"  class="play" style="width:3vw;min-width:50px;position:absolute;z-index:8;"/></div>
+              <div class="next no_select"><img src="Assets\\icons\\play2.svg"  class="play" style="width:3vw;min-width:50px;position:absolute;z-index:8;"/></div>
              </div>
                
                </div>
